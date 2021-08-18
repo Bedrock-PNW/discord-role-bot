@@ -1,7 +1,7 @@
 {
-  "name": "role-bot",
-  "version": "1.0.0",
-  "description": "Discord Role Bot",
+  "name": "bob-role-bot",
+  "version": "0.1.0",
+  "description": "Bob the Discord Role Bot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
