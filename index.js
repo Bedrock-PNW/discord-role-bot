@@ -65,6 +65,7 @@ async function addRole({message, _emoji}, user) {
 
   const member = guild.members.get(user.id);
   const role = guild.roles.find((role) => role.name === config.roles[_emoji.name]);
+  console.log(`Member '${member}' added role '${role}'`);
 
   if (!role) {
     console.error(`Role not found for '${_emoji.name}'`);
@@ -105,6 +106,7 @@ async function removeRole({message, _emoji}, user) {
 
   const member = guild.members.get(user.id);
   const role = guild.roles.find((role) => role.name === config.roles[_emoji.name]);
+  console.log(`Member '${member}' removed role '${role}'`);
 
   if (!role) {
     console.error(`Role not found for '${_emoji.name}'`);
