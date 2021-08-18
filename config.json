@@ -1,8 +1,13 @@
 {
-  "channel": "lfg-roles",
+  "token": "",
+  "channel": "roles",
   "roles": {
-    "xbox": "Xbox",
-    "ps4": "PS4",
-    "steam": "Steam"
+    "pack": "Minceraft Mirson",
+    "🎉": "Party Person",
+    "pogchamp": "Meme Merson",
+    "📰": "Info Inforson",
+    "🖥️": "Techy Techerson",
+    "📖": "Story Storson",
+    "🎾": "Sporty Sporson"
   }
 }

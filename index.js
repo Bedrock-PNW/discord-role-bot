@@ -10,11 +10,14 @@ const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 // if this options is not set, the bot may not be aware of the message that it should be watching
 const client = new Client({ partials: ['MESSAGE'] });
 
+const token = config.token
+
 client.on('ready', onReady);
 client.on('messageReactionAdd', addRole);
 client.on('messageReactionRemove', removeRole);
 
-client.login(process.env.BOT_TOKEN);
+//client.login(process.env.BOT_TOKEN);
+client.login(token);
 
 /**
  * 'ready' event handler for discord.js client
@@ -39,7 +42,7 @@ async function onReady() {
 /**
  * add a role to a user when they add reactions to the configured message
  * @param {Object} reaction - the reaction that the user added
- * @param {Objext} user - the user that added a role to a message
+ * @param {Object} user - the user that added a role to a message
  */
 async function addRole({message, _emoji}, user) {
   if (user.bot || message.id !== config.message_id) {
